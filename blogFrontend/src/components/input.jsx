@@ -1,9 +1,16 @@
 import React from 'react'
 
-function input() {
-  return (
-    <div>input</div>
-  )
-}
+// use of forwARD REF HOOK
 
-export default input
+const Input = React.forwardRef(function Input(
+    {
+        label,
+        type = "text",
+        className = "",
+        ...props
+    }
+){
+    return <h1>Test</h1>
+}, ref)
+
+export default Input
