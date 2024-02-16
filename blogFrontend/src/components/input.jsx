@@ -1,7 +1,7 @@
 import React, { useId } from 'react'
 
 
-// ref gives reference to the parent component 
+// ref gives reference to the parent component that will use the data 
 const Input = React.forwardRef(function Input({
     label,
     type = "text",
